@@ -41,8 +41,8 @@ ENV PM2_SECRET_KEY 91s1py68dkyg5kz
 
 COPY --from=builder /app/package.json ./
 COPY --from=builder /app/pnpm-lock.yaml ./
-COPY --from=builder /app/services/file-manager/dist ./services/file-manager/dist
-COPY --from=builder /app/services/users/dist ./services/users/dist
+COPY --from=builder /app/dist/file-manager ./services/file-manager/dist
+COPY --from=builder /app/dist/users ./services/users/dist
 
 # Install production dependencies only
 

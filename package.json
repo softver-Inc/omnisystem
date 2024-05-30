@@ -3,8 +3,7 @@
   "private": true,
   "scripts": {
     "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint"
+    "dev": "turbo dev"
   },
   "devDependencies": {
     "pm2": "^5.4.0",
