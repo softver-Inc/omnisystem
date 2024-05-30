@@ -23,7 +23,7 @@ RUN pnpm turbo run build
 
 # Stage 2: Create a production-ready image
 
-FROM node:20.9.0-alpine AS runner
+FROM node:lts-alpine3.20 AS runner
 
 # Set working directory
 
