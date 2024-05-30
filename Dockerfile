@@ -1,6 +1,5 @@
 # Stage 1: Install dependencies and build the application
-
-FROM node:20.9.0 AS builder
+FROM node:lts-alpine3.20 AS builder
 
 # Set working directory
 
