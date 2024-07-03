@@ -2,7 +2,7 @@
   "name": "monorepo-micro-service-pm2",
   "private": true,
   "scripts": {
-    "build": "turbo build",
+    "build": "turbo build --force --no-cache --concurrency=100% --parallel",
     "dev": "turbo dev",
     "start:prod": "turbo start:prod"
   },
@@ -16,8 +16,12 @@
     "ts-loader": "^9.4.3",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.2.0",
-    "turbo": "latest",
-    "typescript": "^5.1.3"
+    "typescript": "^5.1.3",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-node-externals": "^3.0.0",
+    "farmup": "^0.0.12",
+    "@farmfe/core": "^1.2.4"
   },
   "packageManager": "pnpm@9.1.4+sha256.30a1801ac4e723779efed13a21f4c39f9eb6c9fbb4ced101bce06b422593d7c9",
   "engines": {
@@ -28,6 +32,7 @@
     "@nestjs/core": "^10.0.0",
     "@nestjs/microservices": "^10.3.8",
     "@nestjs/platform-express": "^10.0.0",
+    "@nestjs/platform-fastify": "^10.3.9",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1"
   }

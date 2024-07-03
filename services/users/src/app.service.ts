@@ -1,4 +1,4 @@
-import type { Data } from './../../../shared/types';
+// import type { Data } from './../../../shared/types';
 import { Inject, Injectable } from "@nestjs/common";
 
 @Injectable()
@@ -8,10 +8,10 @@ export class AppService {
   constructor(@Inject("ANALYTICS") private readonly analyticsClient: any) {}
 
   getHello(): string {
-    return "Hello World from users!";
+    return "Hello World from users! tast";
   }
 
-  createUser(createUserRequest: Data) {
+  createUser(createUserRequest: any) {
     this.users.push(createUserRequest);
 
     this.analyticsClient.emit("user_created", {

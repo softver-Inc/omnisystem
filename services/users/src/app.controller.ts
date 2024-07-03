@@ -16,7 +16,8 @@ export class AppController {
   }
 
   @Get("analytics")
-  getAnalytics() {
+  async getAnalytics() {
+    await new Promise((r) => setTimeout(r, 300));
     return this.appService.getAnalytics();
   }
 }
