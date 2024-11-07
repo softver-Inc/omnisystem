@@ -1,12 +1,12 @@
 config:
-  target: "http://localhost:3000"  # Replace with your actual API endpoint
+  target: "http://localhost:4000"  # Replace with your actual API endpoint
   phases:
-    - duration: 260  # Duration of the test in seconds
-      arrivalRate: 600  # Number of new virtual users per second
+    - duration: 60  # Duration of the test in seconds
+      arrivalRate: 400  # Number of new virtual users per second
   defaults:
     headers:
       content-type: "application/json"  # Default headers for all requests
 scenarios:
   - flow:
       - get:
-          url: "/analytics"  # Endpoint to hit with GET request
+          url: "/"  # Endpoint to hit with GET request

@@ -1,16 +1,14 @@
 {
-  "name": "file-manager",
+  "name": "api-gateway",
   "version": "0.0.1",
   "description": "",
   "author": "",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "dev": "pnpm run clean:build && webpack --mode development",
     "build": "webpack --mode production",
-    "start": "nest start",
-    "dev": "nest start --watch",
-    "start:debug": "nest start --debug --watch",
-    "start:prod": "pm2 start dist/main.js"
+    "clean:build": "rm -rf ./dist"
   },
   "dependencies": {},
   "devDependencies": {}

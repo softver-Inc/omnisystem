@@ -14,10 +14,4 @@ export class AppController {
   createUser(@Body() createUserRequest: any) {
     this.appService.createUser(createUserRequest);
   }
-
-  @Get("analytics")
-  async getAnalytics() {
-    await new Promise((r) => setTimeout(r, 300));
-    return this.appService.getAnalytics();
-  }
 }

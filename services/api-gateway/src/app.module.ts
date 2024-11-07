@@ -7,9 +7,8 @@ import { Module } from "@nestjs/common";
   imports: [
     ClientsModule.register([
       {
-        name: "ANALYTICS",
+        name: "USERS-SERVICE",
         transport: Transport.TCP,
-        options: { port: 3500 },
       },
     ]),
   ],

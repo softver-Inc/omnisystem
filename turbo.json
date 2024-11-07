@@ -10,9 +10,6 @@
       "cache": false,
       "persistent": true,
       "dependsOn": ["^dev"]
-    },
-    "start:prod": {
-      "dependsOn": ["^start:prod"]
     }
   }
 }
