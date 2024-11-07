@@ -1,6 +1,6 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../dist/file-manager",
+    "outDir": "../../dist/api-gateway"
   }
 }

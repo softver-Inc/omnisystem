@@ -54,7 +54,7 @@ COPY pm2.config.js .
 
 # Expose the application port
 
-EXPOSE 3000 4000
+EXPOSE 3000 3500 4000
 
 # Set the command to run the application
 
