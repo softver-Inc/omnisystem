@@ -1,0 +1,12 @@
+config:
+  target: "http://localhost:4000"  # Replace with your actual API endpoint
+  phases:
+    - duration: 30  # Duration of the test in seconds
+      arrivalRate: 20  # Number of new virtual users per second
+  defaults:
+    headers:
+      content-type: "application/json"  # Default headers for all requests
+scenarios:
+  - flow:
+      - get:
+          url: "/"  # Endpoint to hit with GET request
